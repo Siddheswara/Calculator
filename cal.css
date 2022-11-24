@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Roboto&display=swap');
+body{
+    background-image: linear-gradient(to left,rgb(179 197 209), #3a9ac0, #70a1c5 , rgb(179 197 209))
+}
+.container{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 80vh;
+    position: relative;
+    margin: 50px auto;
+}
+.container::before{
+    content: "";
+    background: url('cal.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 30px;
+    
+    z-index: -1;
+
+   
+    
+    /* margin: 50px auto; */
+}
+
+.calculator{
+    padding: 5px ;
+    text-align: center;
+    border: 2px solid 4b82b2;
+    border-radius: 12px;
+    display: inline-block;
+    background-color: #c0d8ec;
+    width: auto;
+    margin: auto;
+    position: absolute;
+    top: 12.5%;
+    left: 10.5%;
+    /* box-shadow: 5px 5px 5px 15px #4b82b2ad; */
+}
+table{
+    margin: 0 auto;
+    /* font-size: 23px; */
+    /* width: ; */
+    padding: 5px 6px;
+}
+button{
+    font-size: 23px;
+    width: 65px;
+    height: 45px;
+    padding: 3px 4px;
+    border: 2px solid #4b82b2;
+    margin: 2px 2px;
+    border-radius: 18px;
+    background-color: #81add6;
+    font-family: 'Baloo Bhai 2', cursive;
+    transition: all ease-out 0.5s;
+}
+button:hover{
+    background-color: #c0d8ec;
+    color:#4b82b2 ;
+    
+}
+
+input{
+    border: 2px solid #4b82b2;
+    font-size: 23px;
+    border-radius: 18px;
+    margin-top: 5px;
+    padding: 5px 9px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+input:focus{
+    border: 2px solid rgb(144, 155, 206);
+    box-shadow: 5px 5px 5px #8b8ccc;
+    outline: none;
+}
